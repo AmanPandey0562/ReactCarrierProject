@@ -1,0 +1,80 @@
+
+<div class="dash1-container">
+    <!-- ----------------------sec-1-------------------------- -->
+    <div class="sec1">
+      <div class="sec1-a">
+        <!-- --------------------search-bar---------- -->
+        <form>
+          <mat-form-field appearance="outline" class="search-form">
+            <input matInput placeholder="Search" />
+            <mat-icon matPrefix>search</mat-icon>
+          </mat-form-field>
+          <!-- ------------------filter-btn----------------------- -->
+          <button mat-raised-button class="filter-btn">
+            <mat-icon>filter_list</mat-icon>
+          </button>
+        </form>
+        <!-- -------------------export-btn---------------------- -->
+        <button mat-raised-button> Short By <mat-icon>keyboard_arrow_down</mat-icon> </button>
+      </div>
+      <div>
+        <button mat-raised-button class="lodge-btn" routerLink="/claimsCollab/addNewStaff">
+          <mat-icon>control_point</mat-icon> Add New
+        </button>
+      </div>
+    </div>
+
+    <!-- Sec 2 -->
+
+    <div class="sec3">
+        <table mat-table [dataSource]="dataSource.data" class="mat-elevation-z8">
+          <!--- Note that these columns can be defined in any order.
+                The actual rendered columns are set as a property on the row definition" -->
+
+                <!-- Image Column -->
+                <ng-container matColumnDef="image">
+                  <th mat-header-cell *matHeaderCellDef>User Image</th>
+                  <td mat-cell *matCellDef="let element"><img src="{{ element.userImage }}" alt=""></td>
+                </ng-container>
+
+          <!-- Id Column -->
+          <ng-container matColumnDef="id">
+            <th mat-header-cell *matHeaderCellDef>Id</th>
+            <td mat-cell *matCellDef="let element">{{ element.id }}</td>
+          </ng-container>
+    
+          <!-- Name Column -->
+          <ng-container matColumnDef="name">
+            <th mat-header-cell *matHeaderCellDef>Name</th>
+            <td mat-cell *matCellDef="let element">{{ element.userName }}</td>
+          </ng-container>
+    
+          <!-- email Column -->
+          <ng-container matColumnDef="email">
+            <th mat-header-cell *matHeaderCellDef>Email</th>
+            <td mat-cell *matCellDef="let element">{{ element.email }}</td>
+          </ng-container>
+    
+          <!-- joined Date Column -->
+          <ng-container matColumnDef="joinedDate">
+            <th mat-header-cell *matHeaderCellDef>Joined Date</th>
+            <td mat-cell *matCellDef="let element">{{ element.joinedDate }}</td>
+          </ng-container>
+    
+          <!-- Status Column -->
+          <ng-container matColumnDef="Status">
+            <th mat-header-cell *matHeaderCellDef>User Status</th>
+            <td mat-cell *matCellDef="let element" class="userStatus"><button>{{ element.userStatus }}</button></td>
+          </ng-container>
+
+          <!-- More About -->
+          <ng-container matColumnDef="More">
+            <th mat-header-cell *matHeaderCellDef>More</th>
+            <td mat-cell *matCellDef="let element" [routerLink]="['/claimsCollab/staffDetails' , element.id]"><mat-icon class="threeDot" >more_horiz</mat-icon></td>
+          </ng-container>
+    
+          <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+          <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
+        </table>
+      </div>
+    </div>

@@ -1,0 +1,102 @@
+.piechart{
+    width: 11em;
+    text-align: center;
+    /* border: 1px solid gray; */
+    margin: 0 auto;
+margin-top: 2em;}
+
+
+.text{
+    display: grid;
+    grid-template-columns: auto auto ;
+    row-gap: .8em;
+    margin-top: 1em;
+     
+}
+ 
+.div{
+    margin-right: 2em;
+}
+.tenes{
+  width: 8px;
+  height: 8px;
+    /* border: 1px solid rgb(207, 22, 22); */
+     /* border-radius: 25px; */
+     background-color:  #1a75ff;
+     display: inline-block;
+    margin-right: 5px;
+    
+}
+.abidjan{
+    width: 8px;
+    height: 8px;
+      /* border: 1px solid rgb(207, 22, 22); */
+       /* border-radius: 25px; */
+       background-color: #1a75ff;
+       display: inline-block;
+      margin-right: 5px;
+      
+  }
+   
+  .alger{
+    width: 8px;
+    height: 8px;
+      /* border: 1px solid rgb(207, 22, 22); */
+       /* border-radius: 25px; */
+       background-color:#3385ff;
+       display: inline-block;
+      margin-right: 5px;
+      
+  }
+  .aiqusayr{
+    width: 8px;
+    height: 8px;
+      /* border: 1px solid rgb(207, 22, 22); */
+       /* border-radius: 25px; */
+       background-color:#4d94ff;
+       display: inline-block;
+      margin-right: 5px;
+      
+  }
+  .tunis{
+    width: 8px;
+    height: 8px;
+      /* border: 1px solid rgb(207, 22, 22); */
+       /* border-radius: 25px; */
+       background-color:#66a3ff;
+       display: inline-block;
+      margin-right: 5px;
+      
+  }
+ .elkala {
+    width: 8px;
+    height: 8px;
+      /* border: 1px solid rgb(207, 22, 22); */
+       /* border-radius: 25px; */
+       background-color:#99c2ff;
+       display: inline-block;
+      margin-right: 5px;
+      
+  }
+ .durban {
+    width: 8px;
+    height: 8px;
+      /* border: 1px solid rgb(207, 22, 22); */
+       /* border-radius: 25px; */
+       background-color:#80b3ff;
+       display: inline-block;
+      margin-right: 5px;
+      
+  }
+  .annaba{
+    width: 8px;
+    height: 8px;
+      /* border: 1px solid rgb(207, 22, 22); */
+       /* border-radius: 25px; */
+       background-color:#b3d1ff;
+       display: inline-block;
+      margin-right: 5px;
+      
+  }
+
+ 

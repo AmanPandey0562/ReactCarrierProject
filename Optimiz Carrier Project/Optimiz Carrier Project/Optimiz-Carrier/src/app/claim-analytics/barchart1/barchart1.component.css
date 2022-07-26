@@ -1,0 +1,56 @@
+.piechart {
+    width: 23em;
+    text-align: center;
+    /* border: 1px solid gray; */
+    margin: 0 auto;
+    margin-top: 2em;
+  }
+  
+  .text {
+    display: grid;
+    grid-template-columns: auto auto;
+    row-gap: 2em;
+    margin-top: 1em;
+  }
+  
+  .div {
+    margin-right: 2em;
+  }
+  .blue-dot {
+    width: 8px;
+    height: 8px;
+    /* border: 1px solid rgb(207, 22, 22); */
+    border-radius: 25px;
+    background-color: #55d8fe;
+    display: inline-block;
+    margin-right: 5px;
+  }
+  .purple-dot {
+    width: 8px;
+    height: 8px;
+    /* border: 1px solid rgb(207, 22, 22); */
+    border-radius: 25px;
+    background-color: #a3a0fb;
+    display: inline-block;
+    margin-right: 5px;
+  }
+  
+  .yellow-dot {
+    width: 8px;
+    height: 8px;
+    /* border: 1px solid rgb(207, 22, 22); */
+    border-radius: 25px;
+    background-color: #ffda83;
+    display: inline-block;
+    margin-right: 5px;
+  }
+  .orange-dot {
+    width: 8px;
+    height: 8px;
+    /* border: 1px solid rgb(207, 22, 22); */
+    border-radius: 25px;
+    background-color: #ff8373;
+    display: inline-block;
+    margin-right: 5px;
+  }
+  

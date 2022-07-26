@@ -1,0 +1,23 @@
+<div>
+    <form class="container" [formGroup]="loginForm" (ngSubmit)="getLoginInfo()">
+      <mat-form-field appearance="fill">
+        <mat-label>Email</mat-label>
+        <input matInput type="email" formControlName="email"/>
+      </mat-form-field>
+      <mat-form-field appearance="fill">
+        <mat-label>Password</mat-label>
+        <input matInput type="password" formControlName="password" />
+      </mat-form-field>
+      <div class="flexcontainer">
+        <mat-checkbox color="primary"> Remember me </mat-checkbox>
+        <a>forgot password</a>
+      </div>
+      <div class="example-button-row flexcontainer">
+        <a mat-raised-button color="accent">Login</a>
+      </div>
+  
+      <h2><span>or</span></h2>
+      <a mat-stroked-button (click)="signupAction()">Sign UP</a>
+    </form>
+  </div>
+  <ngx-ui-loader></ngx-ui-loader>

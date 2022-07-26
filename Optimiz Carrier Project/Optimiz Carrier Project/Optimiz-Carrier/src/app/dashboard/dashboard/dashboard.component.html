@@ -1,0 +1,84 @@
+<div>
+<img src="https://www.mapsinternational.com/pub/media/catalog/product/cache/afad95d7734d2fa6d0a8ba78597182b7/g/i/giant-world-map-mural-classic_wm01165.jpg" alt="">
+
+<table mat-table [dataSource]="dataSource.data" class="mat-elevation-z8">
+
+    <!--- Note that these columns can be defined in any order.
+          The actual rendered columns are set as a property on the row definition" -->
+  
+    <!-- Position Column -->
+    <ng-container matColumnDef="country">
+      <th mat-header-cell *matHeaderCellDef class="tableHeading"> Country </th>
+      <td mat-cell *matCellDef="let element"> {{element.country}} </td>
+    </ng-container>
+  
+    <!-- Name Column -->
+    <ng-container matColumnDef="settled">
+      <th mat-header-cell *matHeaderCellDef class="tableHeading"> Settled </th>
+      <td mat-cell *matCellDef="let element"> {{element.settled}} </td>
+    </ng-container>
+  
+    <!-- Weight Column -->
+    <ng-container matColumnDef="presettled">
+      <th mat-header-cell *matHeaderCellDef class="tableHeading"> Pre-Settled </th>
+      <td mat-cell *matCellDef="let element"> {{element.presettled}} </td>
+    </ng-container>
+  
+    <!-- Symbol Column -->
+    <ng-container matColumnDef="pending">
+      <th mat-header-cell *matHeaderCellDef class="tableHeading"> Pending </th>
+      <td mat-cell *matCellDef="let element"> {{element.pending}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="closed">
+        <th mat-header-cell *matHeaderCellDef class="tableHeading"> Closed </th>
+        <td mat-cell *matCellDef="let element"> {{element.closed}} </td>
+      </ng-container>
+
+      <ng-container matColumnDef="value">
+        <th mat-header-cell *matHeaderCellDef class="tableHeading"> Value </th>
+        <td mat-cell *matCellDef="let element"> {{element.value}} </td>
+      </ng-container>
+  
+    <tr mat-header-row *matHeaderRowDef="columnsToDisplay"></tr>
+    <tr mat-row *matRowDef="let row; columns: columnsToDisplay;"></tr>
+  </table>
+  </div>
+
+<br>
+
+  <!-- All Charts -->
+  <div class="graph-grid">
+    <div class="chart graph-chart">
+      <strong><span>Claim Portfolio</span></strong>| <span>Value</span><hr>
+      <app-barchart  ></app-barchart>
+    </div>
+    <div class="chart graph-chart2">
+      <strong><span>Claim Portfolio</span></strong>| <span>Volume</span><hr>
+      <app-barchart1 ></app-barchart1>
+    </div>
+    <div class="chart pie-chart">
+      <strong><span>Claim Portfolio</span></strong>| <span>Damage Type</span><hr>
+      <app-pie-chart ></app-pie-chart>
+    </div>
+  
+    <div class="chart1 claim">
+      <app-status-chart></app-status-chart>
+    </div>
+  
+    <div class="chart pie-chartblue"> 
+      <strong><span>Claim Portfolio</span></strong>| <span>Origin(Port of Discharge)</span><hr>
+       <app-origin-pir-chart></app-origin-pir-chart>
+    </div>
+    <div class="chart pie-chartgreen"> 
+      <strong><span>Claim Portfolio</span></strong>| <span>Cargo Type</span><hr>
+     <app-cargo-piechart></app-cargo-piechart>
+    </div>
+    <div class="chart pie-chartpurple">
+      <strong><span>Claim Portfolio</span></strong>| <span>Claim Type</span><hr>
+        <app-claim-type-piechart></app-claim-type-piechart>
+      </div>
+  </div>
+  
+
+  

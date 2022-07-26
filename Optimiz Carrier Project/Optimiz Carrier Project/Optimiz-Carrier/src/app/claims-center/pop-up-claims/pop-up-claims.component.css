@@ -1,0 +1,33 @@
+h1{
+    text-align: center;
+    border-bottom: 2px solid rgba(143, 123, 123, 0.158);
+}
+h3{
+    text-align: center;
+}
+.mainDiv{
+    display: flex;
+    gap: 5rem;
+    margin-left: 3rem;
+}
+.client{
+    margin-left: 1.5rem;
+}
+.opponent{
+    margin-left: 2rem;
+}
+
+div .button1{
+    background-color: rgb(38,153,251);
+    color: white;
+    margin-left: 11rem;
+}
+div .button2{
+    background-color: rgb(38,153,251);
+    color: white;
+    margin-left: 2rem;
+}
+.buttonDiv{
+    margin-top: 2rem;
+    display: flex;
+}

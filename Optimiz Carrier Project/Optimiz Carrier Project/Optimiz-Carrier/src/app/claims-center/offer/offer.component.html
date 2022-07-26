@@ -1,0 +1,138 @@
+<div class="details">
+    <header class="header">
+        <div class="container">
+            <h1 class="claim">Claim Details</h1>
+            <a class="btn btn-warning">Pending</a>
+            <button class="btn1"><i class="fa fa-close"></i> Assign</button>
+        </div>
+    </header>
+    <div class="box">
+        <div class="card" style="width: 25rem;">
+            <h5 class="attach">Attachments</h5><br><br>
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class=" img1 carousel-item active">
+                        <img src="../../../assets/image/Form1.png" class="d-block " alt="..." width="90%">
+                    </div>
+                    <div class="img2 carousel-item">
+                        <img src="../../../assets/image/Form2.png" class="d-block  " alt="..." width="80%">
+                    </div>
+                    <div class="img3 carousel-item">
+                        <img src="../../../assets/image/form3.jpg" class="d-block  " alt="..." width="80%">
+                    </div>
+                </div>
+                <button class="prev carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="next carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="userData">
+        <div class="record1">
+            <h4>Claim Handler</h4>
+            <p><strong>John Doe</strong></p>
+        </div>
+        <div class="record2">
+            <h4>Claim ID</h4>
+            <p><strong>1255020</strong></p>
+        </div>
+        <div class="record3">
+            <h4>Claimant Ref</h4>
+            <p><strong>1255020</strong></p>
+        </div>
+        <div class="record4">
+            <h4>Claim Amount</h4>
+            <p><strong>&#x20B9;21,234</strong></p>
+        </div>
+    </div>
+    
+    <div class="userData">
+        <div class="record1">
+            <h4>Discharge Date</h4>
+            <p><strong>22-07-2022</strong></p>
+        </div>
+        <div class="record5">
+            <h4>Address</h4>
+            <p><strong>Agra</strong></p>
+        </div>
+        <div class="record6">
+            <h4>Type of Damage</h4>
+            <p><strong>Road Accidents</strong></p>
+        </div>
+        <div class="record7">
+            <h4>Cargo</h4>
+            <p><strong>Fruits&Vegs</strong></p>
+        </div>
+    </div>
+    
+    <div class="userData">
+        <div class="record1">
+            <h4>Container Number</h4>
+            <p><strong>CNT29665231</strong></p>
+        </div>
+        <div class="record8">
+            <h4>Bill of Lading Number</h4>
+            <p><strong>CNT29665231</strong></p>
+        </div>
+        <div class="moreDetails">
+           <a (click)="onClick()"> + more details</a>
+        </div>
+    </div>
+    <div class="record9">
+        <h3><strong>Summary</strong></h3>
+    </div>
+    <div class="record10">
+        <p class="container1">Your car insurance policy claims are mainly of two types: cashless claims and reimbursement
+            claims. While the former does not require you to pay from your pocket since the insurer will settle the repair
+            bill directly with the network garage, the latter is when you repair the car and raise a claim for the repair
+            bill and the insurer will reimburse the repair bill. Note: The insurance company will review and then decide on
+            the compensation based on the terms and conditions of your policy. When a claim has been received but has not
+            been approved or denied, finished or completed. It is waiting until the premium is paid or the plan is canceled
+            due to nonpayment. It is simply in a waiting period. </p>
+    </div>
+    </div>
+    <div *ngIf="flag">  
+        <div class="cont">
+            <div>
+                <h2 class="offer"><strong>OFFER RECEIVED </strong><span class="ps-1">from Carrier Name</span></h2>
+                <p class="offer">Offer Amount</p>
+                <p class="offer"><strong>&#x20B9;19,250</strong></p>
+            </div>
+            <div class="rec">
+                <h3 class="offer"><strong>Summary</strong></h3>
+            </div>
+            <div class="rec1">
+                <p class="offer">Your car insurance policy claims are mainly of two types: cashless claims and reimbursement
+                    claims. While the former does not require you to pay from your pocket since the insurer will settle the
+                    repair
+                    bill directly with the network garage, the latter is when you repair the car and raise a claim for the
+                    repair
+                    bill and the insurer will reimburse the repair bill. Note: The insurance company will review and then decide
+                    on
+                    the compensation based on the terms and conditions of your policy. When a claim has been received but has
+                    not
+                    been approved or denied, finished or completed. It is waiting until the premium is paid or the plan is
+                    canceled
+                    due to nonpayment. It is simply in a waiting period. </p>
+            </div>
+            <button class="btn btn-primary" (click)="acceptOffer()">Accept</button>
+            <button class="click btn btn-light">Reject</button>
+            <button class="click2 btn btn-light">Counter Offer</button>
+        </div>
+
+
+
+        
+    </div>
+
+    <div *ngIf="acceptOfferFlag">
+        <app-accepted-offer></app-accepted-offer>
+    </div>
+   

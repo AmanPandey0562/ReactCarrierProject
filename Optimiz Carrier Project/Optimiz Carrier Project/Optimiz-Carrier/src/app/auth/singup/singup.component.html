@@ -1,0 +1,46 @@
+<mat-toolbar color="primary">
+    <mat-toolbar-row fxLayout="row">
+        <span class="title-center">Sign Up</span>
+    </mat-toolbar-row>
+</mat-toolbar>
+<mat-dialog-content class="mat-typography">
+<form [formGroup]="signUpForm">
+    <div fxFlex fxLayout="column">
+<mat-form-field appearance="fill" fxFlex>
+<mat-label>First Name:</mat-label>
+<input matInput formControlName="firstName" required>
+<mat-error *ngIf="signUpForm.controls.firstName.touched && signUpForm.controls.firstName.invalid">
+    <span *ngIf="signUpForm.controls.firstName.errors.required">This Field Is Mandatory</span>
+</mat-error>
+</mat-form-field>
+
+<mat-form-field appearance="fill" fxFlex>
+    <mat-label>Last Name:</mat-label>
+    <input matInput formControlName="lastName" required>
+    <mat-error *ngIf="signUpForm.controls.lastName.touched && signUpForm.controls.lastName.invalid">
+        <span *ngIf="signUpForm.controls.lastName.errors.required">This Field Is Mandatory</span>
+    </mat-error>
+    </mat-form-field>
+
+<mat-form-field appearance="fill" fxFlex>
+    <mat-label>Email:</mat-label>
+    <input matInput formControlName="email" required>
+    <mat-error *ngIf="signUpForm.controls.email.touched && signUpForm.controls.email.invalid">
+        <span *ngIf="signUpForm.controls.email.errors.required">This Field Is Mandatory</span>
+    </mat-error>
+    </mat-form-field>
+
+        <mat-form-field appearance="fill" fxFlex>
+            <mat-label>Password:</mat-label>
+            <input matInput formControlName="password" required>
+            <mat-error *ngIf="signUpForm.controls.password.touched && signUpForm.controls.password.invalid">
+                <span *ngIf="signUpForm.controls.password.errors.required">This Field Is Mandatory</span>
+            </mat-error>
+            </mat-form-field>
+    </div>
+</form>
+</mat-dialog-content>
+
+<mat-dialog-actions align="center">
+<button mat-raised-button color="primary" type="submit" (click)="handleSubmitButton()">Register</button>
+</mat-dialog-actions>

@@ -1,0 +1,81 @@
+table {
+  width: 40%;
+  max-height: 20px;
+}
+.mat-elevation-z8{
+  margin-left: 47rem;
+  margin-top: -15rem;
+}
+.tableHeading{
+  background-color: rgba(44, 39, 39, 0.521);
+  color: white;
+  font-size: 17px;
+  
+}
+img{
+  position: relative;
+  top: 3.8rem;
+  left: 7rem;
+  width: 40vw;
+  height: 40vh;
+  opacity: 0.6;
+}
+
+tr.mat-row, tr.mat-footer-row {
+  height: 30.5px;
+}
+
+
+ 
+
+.graph-chart{
+  grid-area: graph-chart;
+}
+.graph-chart2{
+  grid-area: graph-chart2;
+}
+.pie-chart{
+  grid-area: pie-chart;
+}
+.claim{
+  grid-area: claim;
+}
+.pie-chartblue{
+  grid-area: pie-chartblue;
+}
+.pie-chartgreen{
+  grid-area: pie-chartgreen;
+}
+.pie-chartpurple{
+  grid-area: pie-chartpurple;
+}
+.graph-grid{
+  /* border: 1px solid red; */
+  display: grid;
+  gap: 2em;
+  grid-template-columns: auto auto auto;
+  grid-template-areas:'graph-chart graph-chart2 pie-chart'
+                      'claim            claim       claim'
+                      'pie-chartblue pie-chartgreen pie-chartpurple';
+  padding: 2em;
+  text-align: center;
+}
+
+.chart{
+  /* border: 2px solid green;
+   */
+   box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  background-color: white;
+   
+  width: 28em;
+  height: 23em;
+  padding: .3em;
+}
+.chart1{
+  /* border: 2px solid green; */
+  background-color: rgb(255, 255, 251);
+  padding: 1em;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+} .pie-chartpurple{
+  margin: 0 auto;
+}

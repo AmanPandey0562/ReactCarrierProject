@@ -1,0 +1,82 @@
+.dash1-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
+    margin: 0 auto;
+    /* border: 1px solid black; */
+    gap: 2rem;
+  }
+  
+  .sec1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .sec1-a {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+  }
+  .search-form {
+    width: 450px;
+    color: grey;
+  }
+  
+  table {
+    width: 100%;
+  }
+  
+  .lodge-btn {
+    background-color: rgb(255,255,255)
+  }
+  img{
+    width: 35px;
+    height: 35px;
+  }
+  .userStatus button{
+    background-color: rgb(28,214,124);
+    color: rgb(229,250,240);
+    border: none;
+    padding-left: 12px;
+    padding-right: 12px;
+    font-size: 17px;
+  }
+  
+  .mat-raised-button {
+    border-radius: 0px;
+    padding: auto;
+    height: 45px;
+  }
+
+  form {
+    display: flex;
+    align-items: center;
+  }
+  
+  .mat-form-field-appearance-outline,
+  .mat-form-field-flex {
+    margin-top: 17px;
+  }
+  .filter-btn {
+    background-color: grey;
+    color: white;
+  }
+  .setting-btn {
+    color: grey;
+  }
+  
+  .mat-typography {
+    font: 401 11px/17px Roboto, "Helvetica Neue", sans-serif;
+  }
+  
+  .bar-chart {
+    display: flex;
+    width: 50%;
+    /* width: 100px; */
+  }
+
+  .threeDot{
+    font-size: 28px;
+    color: rgb(207,207,207);
+  }

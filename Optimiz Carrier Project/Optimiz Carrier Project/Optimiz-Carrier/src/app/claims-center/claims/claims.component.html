@@ -1,0 +1,95 @@
+<div class="dash1-container">
+    <!-- ----------------------sec-1-------------------------- -->
+    <div class="sec1">
+      <div class="sec1-a">
+        <!-- --------------------search-bar---------- -->
+        <form>
+          <mat-form-field appearance="outline" class="search-form">
+            <input matInput placeholder="Search" />
+            <mat-icon matPrefix>search</mat-icon>
+          </mat-form-field>
+          <!-- ------------------filter-btn----------------------- -->
+          <button mat-raised-button class="filter-btn">
+            <mat-icon>filter_list</mat-icon>
+          </button>
+        </form>
+        <!-- ------------------setting-btn----------------------- -->
+        <button mat-raised-button class="setting-btn" (click)="openDialog() " >
+          <mat-icon>settings</mat-icon>
+        </button>
+        <!-- -------------------export-btn---------------------- -->
+        <button mat-raised-button><mat-icon>share</mat-icon> Export</button>
+      </div>
+      <div>
+        <button mat-raised-button class="lodge-btn">
+          <mat-icon>control_point</mat-icon> Lodge Claim
+        </button>
+      </div>
+    </div>
+    <!-- ----------------------sec-2-------------------------- -->
+    <div class="sec2">
+      <mat-accordion>
+        <mat-expansion-panel
+          (opened)="panelOpenState = true"
+          (closed)="panelOpenState = false"
+        >
+          <mat-expansion-panel-header>
+            <mat-panel-title> Self aware panel </mat-panel-title>
+            <mat-panel-description>
+              <!-- Currently I am {{ panelOpenState ? "open" : "closed" }} -->
+            </mat-panel-description>
+          </mat-expansion-panel-header>
+          <div class="bar-chart">
+            <canvas
+              baseChart
+              [data]="salesData"
+              [type]="'bar'"
+              [options]="chartOptions"
+            >
+            </canvas>
+            <canvas
+              baseChart
+              [data]="salesData"
+              [type]="'bar'"
+              [options]="chartOptions"
+            >
+            </canvas>
+          </div>
+        </mat-expansion-panel>
+      </mat-accordion>
+    </div>
+    <!-- ----------------------sec-4-------------------------- -->
+    <div class="sec3">
+      <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+        <!--- Note that these columns can be defined in any order.
+              The actual rendered columns are set as a property on the row definition" -->
+  
+        <!-- Position Column -->
+        <ng-container matColumnDef="position">
+          <th mat-header-cell *matHeaderCellDef>No.</th>
+          <td mat-cell *matCellDef="let element">{{ element.position }}</td>
+        </ng-container>
+  
+        <!-- Name Column -->
+        <ng-container matColumnDef="name">
+          <th mat-header-cell *matHeaderCellDef>Name</th>
+          <td mat-cell *matCellDef="let element">{{ element.name }}</td>
+        </ng-container>
+  
+        <!-- Weight Column -->
+        <ng-container matColumnDef="weight">
+          <th mat-header-cell *matHeaderCellDef>Weight</th>
+          <td mat-cell *matCellDef="let element">{{ element.weight }}</td>
+        </ng-container>
+  
+        <!-- Symbol Column -->
+        <ng-container matColumnDef="symbol">
+          <th mat-header-cell *matHeaderCellDef>Symbol</th>
+          <td mat-cell *matCellDef="let element">{{ element.symbol }}</td>
+        </ng-container>
+  
+        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+        <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
+      </table>
+    </div>
+  </div>

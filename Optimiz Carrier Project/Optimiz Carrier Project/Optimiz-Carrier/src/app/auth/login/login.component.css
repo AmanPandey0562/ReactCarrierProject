@@ -1,0 +1,42 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 40vw;
+    height: 60vh;
+    border: 2px solid blanchedalmond;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 8rem;
+  }
+  .flexcontainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 25rem;
+  }
+  .mat-form-field {
+    width: 25rem;
+  }
+  h2 {
+    width: 80%;
+    text-align: center;
+    border-bottom: 1px solid #000;
+    line-height: 0.1em;
+    margin: 10px 0 20px;
+  }
+  
+  h2 span {
+    background: #fff;
+    padding: 0 10px;
+  }
+  .example-button-row {
+    margin-top: 1rem;
+  }
+  .mat-raised-button {
+    background-color: #0074cc;
+  }
+  .mat-stroked-button {
+    border-color: #0074cc;
+  }

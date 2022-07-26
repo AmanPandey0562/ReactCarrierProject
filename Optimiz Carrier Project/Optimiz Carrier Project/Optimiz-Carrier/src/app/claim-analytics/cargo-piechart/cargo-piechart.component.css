@@ -1,0 +1,79 @@
+.piechart{
+    width: 11em;
+    text-align: center;
+    /* border: 1px solid gray; */
+    margin: 0 auto;
+margin-top: 2em;}
+
+.text{
+    display: grid;
+    grid-template-columns: auto auto ;
+    row-gap: .8em;
+    margin-top: 1em;
+     
+}
+ 
+.div{
+    margin-right: 2em;
+}
+.tenes{
+  width: 8px;
+  height: 8px;
+    /* border: 1px solid rgb(207, 22, 22); */
+     /* border-radius: 25px; */
+     background-color:  #45B7AF;
+     display: inline-block;
+    margin-right: 5px;
+    
+}
+.abidjan{
+    width: 8px;
+    height: 8px;
+      /* border: 1px solid rgb(207, 22, 22); */
+       /* border-radius: 25px; */
+       background-color: #46b9b1;
+       display: inline-block;
+      margin-right: 5px;
+      
+  }
+   
+  .alger{
+    width: 8px;
+    height: 8px;
+      /* border: 1px solid rgb(207, 22, 22); */
+       /* border-radius: 25px; */
+       background-color:#59c0b9;
+       display: inline-block;
+      margin-right: 5px;
+      
+  }
+  .aiqusayr{
+    width: 8px;
+    height: 8px;
+      /* border: 1px solid rgb(207, 22, 22); */
+       /* border-radius: 25px; */
+       background-color:#6bc7c1;
+       display: inline-block;
+      margin-right: 5px;
+      
+  }
+  .tunis{
+    width: 8px;
+    height: 8px;
+      /* border: 1px solid rgb(207, 22, 22); */
+       /* border-radius: 25px; */
+       background-color:#7ecec9;
+       display: inline-block;
+      margin-right: 5px;
+      
+  }
+ .elkala {
+    width: 8px;
+    height: 8px;
+      /* border: 1px solid rgb(207, 22, 22); */
+       /* border-radius: 25px; */
+       background-color: #90d5d0;
+       display: inline-block;
+      margin-right: 5px;
+      
+  }

@@ -1,0 +1,91 @@
+<div class="backArrow">
+  <mat-icon>arrow_back_ios</mat-icon><h2 routerLink="/claimsCollab/staffManagement">Back</h2>
+</div>
+
+<div class="sec3">
+    <table mat-table [dataSource]="dataSource.data" class="mat-elevation-z8">
+      <!--- Note that these columns can be defined in any order.
+            The actual rendered columns are set as a property on the row definition" -->
+
+            <!-- Image Column -->
+            <ng-container matColumnDef="image">
+              <th mat-header-cell *matHeaderCellDef>UserImage</th>
+              <td mat-cell *matCellDef="let element"><img src="{{ element.userImage }}" alt=""></td>
+            </ng-container>
+
+             <!-- Name Column -->
+      <ng-container matColumnDef="name">
+        <th mat-header-cell *matHeaderCellDef>Name</th>
+        <td mat-cell *matCellDef="let element">{{ element.userName }}</td>
+      </ng-container>
+
+      <!-- Id Column -->
+      <ng-container matColumnDef="id">
+        <th mat-header-cell *matHeaderCellDef>Id</th>
+        <td mat-cell *matCellDef="let element">{{ element.id }}</td>
+      </ng-container>
+
+      <!-- User Role -->
+      <ng-container matColumnDef="userRole">
+        <th mat-header-cell *matHeaderCellDef>User Role</th>
+        <td mat-cell *matCellDef="let element">{{ element.userRole }}</td>
+      </ng-container>
+
+      <!-- email Column -->
+      <ng-container matColumnDef="Email">
+        <th mat-header-cell *matHeaderCellDef>Email</th>
+        <td mat-cell *matCellDef="let element">{{ element.email }}</td>
+      </ng-container>
+
+      <!-- Cluster Group Column -->
+      <ng-container matColumnDef="ClusterGroup">
+        <th mat-header-cell *matHeaderCellDef>Cluster Group</th>
+        <td mat-cell *matCellDef="let element">{{ element.clusterGroup }}</td>
+      </ng-container>
+
+      <!-- Joined Date Column -->
+      <ng-container matColumnDef="JoinedDate">
+        <th mat-header-cell *matHeaderCellDef>Joined Date</th>
+        <td mat-cell *matCellDef="let element">{{ element.joinedDate }}</td>
+      </ng-container>
+
+      <!-- Status Column -->
+      <ng-container matColumnDef="Status">
+        <th mat-header-cell *matHeaderCellDef>User Status</th>
+        <td mat-cell *matCellDef="let element" class="userStatus"><button>{{ element.userStatus }}</button></td>
+      </ng-container>
+
+      <!-- More About -->
+      <ng-container matColumnDef="More">
+        <th mat-header-cell *matHeaderCellDef>More</th>
+        <td mat-cell *matCellDef="let element"><mat-icon class="threeDot" >more_horiz</mat-icon></td>
+      </ng-container>
+
+      <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+      <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
+    </table>
+  </div>
+
+  <!-- PerFonmance Summary -->
+
+  
+<div class="dash1-container">
+  <!-- ----------------------sec-1-------------------------- -->
+  <div class="sec1">
+    <div class="sec1-a">
+  
+<h2>Performance Summary</h2>
+      <!-- -------------------export-btn---------------------- -->
+      <button mat-raised-button class="exportbtn"><mat-icon>share</mat-icon> &nbsp; Export  </button>
+    </div>
+    <div>
+      <button mat-raised-button class="lodge-btn">
+        <!-- <mat-icon>control_point</mat-icon> Create A Cluster -->
+        <label for="date">Date:</label>&nbsp;
+        <input type="date">
+      </button>
+     
+    </div>
+  </div>
+
+  <app-status-chart></app-status-chart>

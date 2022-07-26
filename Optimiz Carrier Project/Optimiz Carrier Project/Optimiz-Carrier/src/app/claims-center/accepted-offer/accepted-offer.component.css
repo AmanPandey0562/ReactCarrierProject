@@ -1,0 +1,31 @@
+.cont1{
+    background-color:white;
+    border: 2px solid rgb(227, 227, 227);
+    width: 57.5vw;
+    margin-left: 2%;
+    height: 50vh ;
+  }
+  .offer{
+    margin-top: 1rem;
+  }
+
+  .draft{
+    margin-left: 39.5rem;
+    margin-right: 1rem;
+  }
+  .offer1{
+    background-color: rgb(255, 255, 255);
+    width: 55rem;
+    margin-left: 1rem;
+    border: 2px solid rgb(227, 227, 227);
+    padding: 8px;
+  }
+
+  .attachment{
+    margin-left: 1rem;
+    padding-top: 1.5rem;
+  }
+
+  .click1,.click2{
+    margin-top: 1.5rem;
+  }

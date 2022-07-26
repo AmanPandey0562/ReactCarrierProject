@@ -1,0 +1,81 @@
+<div class="backArrow">
+  <mat-icon>arrow_back_ios</mat-icon><h2 routerLink="/claimsCollab/staffManagement">Back</h2>
+</div>
+
+<div class="formcontainer">
+    <h2 class="tableheading">Add New Staff</h2>
+    <hr />
+    <form [formGroup]="newStaff" (ngSubmit)="staffData()">
+      <div class="flexstyle">
+        <div class="item1">
+          <p>
+            <label
+              >User Role :
+              <select name="language" formControlName="userRole">
+                <option value="indian">Manager</option>
+                <option value="nepali">Assistance Vice President</option>
+                <option value="others">Director</option>
+                <option value="others">Investor</option>
+                <option value="others">Accountant</option>
+                <option value="others">SalesMan</option>
+              </select></label
+            >
+          </p>
+          <p>
+            <label>add to cluster Group :<input type="text" formControlName="clusterGroup"/></label>
+          </p>
+          <p>
+            <label>Name : <input type="text" formControlName="name" /></label>
+          </p>
+          <p>
+            <label>Username : <input type="text" formControlName="userName" /></label>
+          </p>
+          <p>
+            <label>Email : <input type="text" formControlName="email"/></label>
+          </p>
+          <p>
+            <label>Joined Date : <input type="date" formControlName="joinedDate"/></label>
+          </p>
+          <p>
+            <label>Password : <input type="text" formControlName="password"/></label>
+          </p>
+  
+          <p>
+            <label> Confirm Password : <input type="password" /></label>
+          </p>
+  
+          <label
+            >User Status:<label class="radio"
+              >Active
+              <input type="radio" formControlName="userStatus" name="gender" value="InActive" 
+            /></label>
+            <label class="radio"
+              >InActive
+              <input type="radio" formControlName="userStatus" name="gender" value="Active" /></label
+          ></label>
+  
+          <div class="btn">
+            <p>
+              <button type="submit">Submit</button>
+            </p>
+          </div>
+        </div>
+        <div class="profile">
+          <div>Profile Image</div>
+          <img src="../../../assets/image/profileImage.png" />
+          <div>
+            <label for="files"
+              ><mat-icon>add_a_photo</mat-icon>Select Image</label
+            >
+            <input
+              type="file"
+              name="file"
+              value="file"
+              id="files"
+              style="visibility: hidden"
+               formControlName="userImage" />
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>

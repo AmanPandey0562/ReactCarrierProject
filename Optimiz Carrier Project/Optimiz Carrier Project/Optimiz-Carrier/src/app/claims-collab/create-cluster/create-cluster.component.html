@@ -1,0 +1,78 @@
+<div class="formcontainer">
+    <h2 class="tableheading">New Cluster</h2>
+    <form [formGroup]="clusterForm" (ngSubmit)="formData()">
+      <div class="flexstyle">
+        <div class="item1">
+          <p>
+            <label>Cluster Name : <input type="text" formControlName="clusterName"/></label>
+          </p>
+          <div class="column">
+            <label class="authority">Settlement Authority : </label>
+            <div>
+            <label class="min" for="integer">Min </label>
+            <input class="inpfields" type="integer" id="integer" name="integer" formControlName="min">
+            </div>
+            <div>
+            <label class="max" for="integer">Max </label>
+            <input class="inpfieldsA"type="integer" id="integer" name="integer" formControlName="max">
+            </div>
+            <div>
+            <label class="currency" for="pwd">Currency <select class="selectA" name="language" formControlName="currency">
+              <option  value="INR" >INR</option>
+              <option  value="USD" >USD</option>
+              <option  value="CAD" >CAD</option>
+              <option  value="BRL">BRL</option>
+              <option  value="AUD" >AUD</option>
+              <option  value="DKK" >DKK</option>
+            </select></label>
+          </div>
+          </div>
+          <p>
+            <label>Location : <input type="text" formControlName="location" /></label>
+          </p>
+          <p>
+            <label>Cargo Type : <input type="text" formControlName="cargoType"/></label>
+          </p>
+          <p>
+            <label>Port of Loading :
+              <select class="select" name="language" formControlName="portLoad">
+                <option value="Select Origin" >Select Origin</option>
+                <option value="Kochi Port" >Kochi Port</option>
+                <option value="Kolkata Port" >Kolkata Port</option>
+                <option value="Mumbai Port" >Mumbai Port</option>
+                <option value="Chennai port" >Chennai port</option>
+                <option value="Jawaharlal Nehru port" >  Jawaharlal Nehru port</option>
+              </select></label>
+          </p>
+          <p>
+            <label>Port of Discharge : <select name="language" formControlName="portDischarge">
+              <option value="Select Destination">Select Destination</option>
+              <option value="Port of Chittagong" >Port of Chittagong</option>
+              <option value="Port Louis" >Port Louis</option>
+              <option value="Muscat" >Muscat</option>
+              <option value="Khafji" >Khafji</option>
+              <option value="Cape Town" >Cape Town</option>
+            </select></label>
+          </p>
+  
+          <p>
+            <label> Add Staff : <input type="text" formControlName="addStaff"/></label>
+          </p>
+          <p class="status">Status:</p>
+          <input class="radio1" type="radio" id="html" name="fav_language" value="Active" formControlName="status">
+          <label class="active" for="html">Active</label>
+          <input class="radio2" type="radio" id="html" name="fav_language" value="InActive" formControlName="status">
+          <label class="activeA"for="html">Inactive</label>
+  
+          <div class="btn">
+            <p>
+              <button class="btn1" type="submit" >Create</button>
+            </p>
+            <p>
+              <button class="btn2" type="submit">Cancel</button>
+            </p>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
